@@ -1,8 +1,8 @@
-import params from './params/latest-params.json';
-import weaponInfo from './params/WeaponInfoMain.json';
-import subInfo from './params/SubInfoMain.json';
-import specialInfo from './params/SpecialInfoMain.json';
-import hml from './params/hml.json';
+import params from '$lib/params/latest-params.json';
+import weaponInfo from '$lib/params/WeaponInfoMain.json';
+import subInfo from '$lib/params/SubInfoMain.json';
+import specialInfo from '$lib/params/SpecialInfoMain.json';
+import hml from '$lib/params/hml.json';
 
 export class LeannyService {
     version = 210;
