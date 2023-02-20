@@ -1,14 +1,13 @@
 <script lang="ts">
-    // import type { PageData } from "./$types";
+    import type { PageData } from "./$types";
     import { onMount } from "svelte";
     import { LeannyService } from "$lib/LeannyService";
 
-    // export let data: PageData;
+    export let data: PageData;
     const ls = new LeannyService();
     export let effects;
 
     onMount(() => {
-        // effects = data.result;
         effects = ls.calcSsu();
 
         effects.forEach(effect => {
@@ -21,7 +20,8 @@
 <div class="bg-slate-800 text-white ">
 
     <h1 class="text-2xl">Welcome to Splat Builder</h1>
-    <!-- <p>{data.message}</p> -->
+    <p>{data.url}</p>
+    <p>{data.message.message}</p>
     
     <div class="flex flex-wrap">
         <div style="padding: 5px">
